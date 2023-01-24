@@ -46,18 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EndingScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EndingScreen.Designer.cs">
+      <DependentUpon>EndingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\endScreen.cs">
+    <Compile Include="gameScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Properties\endScreen.Designer.cs">
+    <Compile Include="gameScreen.Designer.cs">
+      <DependentUpon>gameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="endScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="endScreen.Designer.cs">
       <DependentUpon>endScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\UserControl1.cs">
@@ -66,11 +78,17 @@
     <Compile Include="Properties\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EndingScreen.resx">
+      <DependentUpon>EndingScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\endScreen.resx">
+    <EmbeddedResource Include="endScreen.resx">
       <DependentUpon>endScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameScreen.resx">
+      <DependentUpon>gameScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

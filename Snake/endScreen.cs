@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Snake.Properties
+namespace Snake
 {
     public partial class endScreen : UserControl
     {
@@ -19,6 +19,11 @@ namespace Snake.Properties
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
